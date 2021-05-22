@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel='stylesheet' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' href='font/css/open-iconic-bootstrap.min.css'>
+    <link rel='stylesheet' href='css/main.css'>
+    <title>測量士の過去問</title>
+</head>
+<body class="bg-light">
+    <header>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="/gensan/" class="navbar-brand d-flex align-items-center">
+            <span class="oi oi-compass mr-2" title="icon compass" aria-hidden="true"></span>
+            <strong>測量源さん.com</strong>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="py-3 text-center">
+        <h2>測量士の過去問でい！</h2>
+        <p class="text-muted">H26～H30の午前の計算問題以外な！</p>
+      </div>
+      <div class="row">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title" id='y-text'>出題年度</h5>
+            <p class="card-text" id='q-text'>問題文</p>
+          </div>
+        </div>
+      </div>
+      <hr class="mb-4">
+      <div id="a-area">
+        <div class="alert alert-success" id="a-result" role="alert">
+          <h4 class="alert-heading" id="a-text">解答結果</h4>
+          <p id="a-explanation">解説文</p>
+          <hr>
+          <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col">正解数</th>
+                  <th scope="col">不正解数</th>
+                  <th scope="col">正答率</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td id="correctCnt-text">5</td>
+                  <td id="incorrectCnt-text">2</td>
+                  <td id="correctRate-text">25％</td>
+                </tr>
+              </tbody>
+            </table>
+          <hr>
+          <button type="button" class="btn btn-secondary btn-lg btn-block" id="next-btn">次もってこい！</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <div class="list-group text-center" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-01-list" data-toggle="list" href="#list-01-text" role="tab" aria-controls="01">01</a>
+            <a class="list-group-item list-group-item-action" id="list-02-list" data-toggle="list" href="#list-02-text" role="tab" aria-controls="02">02</a>
+            <a class="list-group-item list-group-item-action" id="list-03-list" data-toggle="list" href="#list-03-text" role="tab" aria-controls="03">03</a>
+            <a class="list-group-item list-group-item-action" id="list-04-list" data-toggle="list" href="#list-04-text" role="tab" aria-controls="04">04</a>
+            <a class="list-group-item list-group-item-action" id="list-05-list" data-toggle="list" href="#list-05-text" role="tab" aria-controls="04">05</a>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-01-text" role="tabpanel" aria-labelledby="list-01-list">選択肢1</div>
+            <div class="tab-pane fade" id="list-02-text" role="tabpanel" aria-labelledby="list-02-list">選択肢2</div>
+            <div class="tab-pane fade" id="list-03-text" role="tabpanel" aria-labelledby="list-03-list">選択肢3</div>
+            <div class="tab-pane fade" id="list-04-text" role="tabpanel" aria-labelledby="list-04-list">選択肢4</div>
+            <div class="tab-pane fade" id="list-05-text" role="tabpanel" aria-labelledby="list-05-list">選択肢5</div>
+          </div>
+        </div>
+      </div>
+      <hr class="mb-4">
+      <button type="button" class="btn btn-primary btn-lg btn-block" id="a-btn">解答は！？</button>
+    </div>
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">© 2018 gensan Co.,Ltd.</p>
+    </footer>
+    <script src="js/lib/jquery-3.3.1.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/jquery.csv.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
